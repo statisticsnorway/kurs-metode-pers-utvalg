@@ -170,6 +170,19 @@ sum(U$y1) / 1e+6
 crossprod(netto$es_vekt, netto$y2) / 1e+6
 sum(U$y2) / 1e+6
 
+######################################################
+# Lager en nettofil basert på en frafallsmodell      #
+# der responssannsynligheten (rs) kun er avhengig av #
+# utdanning; jo høyere utdanning, desto større       #
+# sannsynlighet for å svare på undersøkelsen.        #
+######################################################
+utvalg$rs <- ifelse(utvalg$utd == "1", 0.30,
+                    ifelse(utvalg$utd == "2", 0.40,
+                           ifelse(utvalg$utd == "3", 0.50, 0.60)))
+netto <- utvalg[runif(nrow(utvalg)) < utvalg$rs, ]
+
+
+
 
 
 
