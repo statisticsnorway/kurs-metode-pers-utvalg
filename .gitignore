@@ -6,6 +6,11 @@
 .RData
 .RDataTmp
 
+# Not testdata files though
+!utvalg.RData
+!netto.RData
+!trekkeramme.RData
+
 # User-specific files
 .Ruserdata
 
