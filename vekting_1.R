@@ -1,4 +1,3 @@
-setwd("/ssb/bruker/mld/kurs-metode-pers-utvalg")
 #renv::init()
 #renv::install("sampling")
 #renv::install("statisticsnorway/ReGenesees")
@@ -49,7 +48,7 @@ sum(U$y2) / 1e+6
 
 #########################################################
 # Med frafall: Vi leser inn en tidligere laget nettofil #
-# # slik at alle jobber med samme data.                 #
+# slik at alle jobber med samme data.                   #
 #########################################################
 load("netto.RData")
 head(netto)

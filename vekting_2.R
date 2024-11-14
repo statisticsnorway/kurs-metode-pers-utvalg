@@ -93,10 +93,11 @@ svystatL(descal, expression(y1 / y2), vartype = "se")
 sum(U$y1) / sum(U$z)
 
 
-#######################################################
-# R-kode for etterstratifisering hvis vi ikke har lik #
-# trekksannsynlighet innen hvert etterstrata          #
-#######################################################
+##########################################################
+# R-kode for etterstratifisering hvis vi ikke har samme  #
+# trekksannsynlighet i alle etterstrata.                 #
+# (Men det er enklere å bruke ReGenesees til dette også) #
+##########################################################
 # Stratifisert tilfeldig trekking etter kjonn         #
 # krysset med aldersgruppene 16-24, 25-44, 45-66, 67+ #
 # Total utvalgsstørrelse på 1000.                     #
