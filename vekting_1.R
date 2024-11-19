@@ -23,7 +23,7 @@ U <- U[order(U$kjonn, U$ald_grp), ]
 # Trekker utvalg
 s <- strata(data = U,
             stratanames = c("kjonn", "ald_grp"),
-            size = c(67, 169, 172, 102,
+            size = c(67, 169, 173, 102,
                      64, 162, 165, 98),
             method = "srswor")
 # Legger på alle variabler fra trekkerammen
