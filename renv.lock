@@ -30,23 +30,23 @@
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteUsername": "statisticsnorway",
       "RemoteRepo": "ReGenesees",
-      "RemoteRef": "master",
-      "RemoteSha": "7b62a06b789bee927f9509e62b4447dd28e4309c",
+      "RemoteUsername": "statisticsnorway",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "9fd02440fcd45406dde9516c7b948b6e1e3d8fe4",
       "Requirements": [
         "MASS",
         "R",
         "stats"
       ],
-      "Hash": "b25114d78b677b8423f1ee6cde59c2a9"
+      "Hash": "48275b59f4d47e0c82246a1fb9245848"
     },
     "lpSolve": {
       "Package": "lpSolve",
-      "Version": "5.6.21",
+      "Version": "5.6.23",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "730a90bdc519fb0caff03df11218ddd8"
+      "Hash": "c4e64e374c4ab1e6ffda55073fd04c59"
     },
     "renv": {
       "Package": "renv",
@@ -60,14 +60,16 @@
     },
     "sampling": {
       "Package": "sampling",
-      "Version": "2.10",
+      "Version": "2.11",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "MASS",
-        "lpSolve"
+        "R",
+        "lpSolve",
+        "utils"
       ],
-      "Hash": "efbfce0667362d0ac769f920edbfb2c8"
+      "Hash": "d956ab9eef6b3438cfbffa7664d14292"
     }
   }
 }
